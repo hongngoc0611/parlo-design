@@ -1,0 +1,177 @@
+.carousel{
+    padding: 0px 30px 0px 30px;
+    position: relative;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    .elementor-column{
+        width: 100%;
+        .carousel-container{
+            .slider-area{
+                .slider-slider{
+                    .slick-prev{
+                        .slick-list{
+                             .slick-track{
+                                        opacity: 1;
+                                        width: 7295px;
+                                        transform: translate3d(-2918px, 0px, 0px);
+                                            .slick-slide{
+                                                .slingle-slider{
+                                                    width: 100%;
+                                                    display: inline-block;                                                 
+                                                }
+                                            }
+                                        }
+                                       }
+                                   }
+                                }
+                            }
+                        }
+                    }
+                    .carousel-layer{
+                        background-color: #effafa;
+                        .elementor-container{
+                            .elementor-row{
+                                .slick-arrow{
+                                    i{
+                                        opacity: 1;
+                                    }
+                                    &:hover{
+                                        
+                                        color: #fff;
+                                        border-color: #1f2226;
+                                    }
+                                    &:focus{
+                                        outline:none;
+                                    }
+                                    &:hover i{
+                                        color: #23252a;
+    
+                                    }
+    
+                                }
+                                .carousel-column{   
+                                    padding-left: 0;
+                                    padding-right: 0;                  
+                                    .elementor-column-wrap{
+                                        align-items: center;
+                                        top: 37%;
+                                       
+                                        .elementor-widget-wrap{
+                                            align-content: center;
+                                            align-items: center;
+                                            .elementor-widget{
+                                                animation-name: fadeInUp;                                          
+                                                animation-duration: 1.25s;                                           
+                                                text-align: left;
+                                                .heading-title{
+                                                    font-family: "Poppins", Sans-serif;
+                                                    font-size: 72px;
+                                                    font-weight: 500;
+                                                    color: #1f2226;
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    line-height: 1;
+                                                }
+                                                p{
+                                                    font-family: "Poppins", Sans-serif;
+                                                    font-size: 16px;
+                                                    font-weight: 400;
+                                                    line-height: 27px;
+                                                    color: #1f2226;
+                                                    margin-bottom: 20px;
+                                                }
+                                                .carousel-button{
+                                                    a{
+                                                        font-family: "Poppins", Sans-serif;
+                                                        font-weight: 600;
+                                                        text-transform: uppercase;
+                                                        fill: #1f2226;
+                                                        color: #1f2226;
+                                                        background-color: rgba(0,0,0,0);
+                                                        border-style: solid;
+                                                        border-width: 2px 2px 2px 2px;
+                                                        border-color: #1f2226;
+                                                        border-radius: 0px 0px 0px 0px;
+                                                        padding: 12px 24px;
+                                                        font-size: 15px;
+                                                        display: inline-block;
+                                                        line-height: 1;
+                                                        transition: all 0.5s;
+                                                        &:hover{
+                                                            color: #effafa;
+                                                            background-color: #1f2226;
+                                                           
+                                                        }
+                                                    }
+                                                    
+                                                }
+                                               
+                                               &:first-child{
+                                                   animation-delay: 0.3s;
+                                               }
+                                                &:nth-child(2){
+                                                    animation-delay: 0.3s;
+                                                }
+                                                &:last-child{
+                                                    animation-delay: 0.8s;
+                                                }
+                                                &:not(:last-child){
+                                                    margin-bottom: 20px;
+                                                }
+                                            }
+                                             
+                                            
+                                        }
+                                    }
+                                }
+
+
+                           
+                        }
+                        }
+                        
+                }
+   
+            }
+            .elementor-column-wrap-right{
+                .elementor-widget-wrap-right{
+                    .elementor-widget-right{
+                        
+                        animation-name: fadeInRight;
+                        animation-duration: 1.25s;
+                        
+                    }
+                }
+            }
+            
+
+    @keyframes fadeInUp{
+        0%{
+            opacity: 0;
+            transform: translate3d(0,100%,0);
+        }
+        100%{
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    @keyframes fadeInRight{
+        0% {
+            opacity: 0;
+            transform: translate3d(100%,0,0);
+        }
+        
+        100% {
+            opacity: 1;
+            transform: none;
+    }
+}
+
+    @media (max-width: 1600px) and (min-width: 1199px){
+        .slider-slider .slick-arrow {
+            opacity: 0;
+        }
+}
+.slider-slider:hover .slick-arrow{
+    opacity: 1;
+}

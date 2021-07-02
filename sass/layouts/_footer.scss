@@ -1,0 +1,86 @@
+.footer_area-two{
+    background: #effafa;
+    .footer__widgets-area{
+        padding: 50px 0;
+         .col-xs-12{
+            flex-basis: 100% !important;
+            max-width: 100%;
+            padding: 0 16px;        
+         .footer-main-menu{
+             display: flex;
+                ul{
+                   text-align: center;
+                    margin: 0 auto;
+                    padding: 0;
+                    list-style:none;
+                            li{
+                                margin-right: 70px;
+                                display: inline-block;
+                               a{
+                                color: #1f2226;
+                                text-decoration: none;    
+                                transition: all 0.4s;
+                                &:hover{
+                                    color: #ff3535;
+                                }
+                               }
+                               
+                            }
+                        }
+                    }
+               
+        }
+    }
+    .footer__copyright-area{
+        border-top: 1px solid #fff;
+        padding: 15px 0;
+        .ft-middle{
+            align-items: center;
+            .ft-first{
+                
+                .footer-social-media{
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        li{
+                            margin-right: 20px;
+                            display: inline-block;
+                           
+                        }
+                    }
+                }
+            }
+            
+           
+            a, .copyright-txt{
+                @include tag-a(#ababab,14px,0,none);
+            }
+            a:hover{
+                color: #ff3535;
+            }
+          
+        }
+    }
+  
+    // chung
+    .container{
+        padding: 0 $pd-2 - 4;
+        margin: 0 auto; 
+        
+        
+    }
+    img{
+        height: auto;
+        max-width: 100%;
+    }
+    
+    
+    
+}
+// page
+.page{
+    height: 30px;
+}
+
+

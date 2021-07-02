@@ -1,0 +1,64 @@
+.banner{
+    background-image: url(http://demo.shrimpthemes.com/1/parlo/wp-content/uploads/2019/03/testimonial_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:  border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 100px 0px 100px 0px;
+    // left
+    .banner-left{
+        width: 15%;
+  }
+    // center
+    .banner-center{
+        width: 69.332%;
+        .elementor-populated{
+            padding: 10px;
+            .banner-widget{
+                width: 100%;
+                .slick-slider{
+                    .slick-list{
+                        .slick-track{
+                            opacity: 1;
+                            width: 5782px !important;
+                             .slick-slide{
+                                
+                                display: block;
+                                .banner-image{
+                                    margin-bottom: 35px;
+                                    display: inline-block;
+                                }
+                                .banner-content{
+                                    p{
+                                     @include card-p(16px,400,#1f2226,30px);
+                                        margin: 0;
+                                    }
+                                    .banner-actor{
+                                        margin: 20px 0;
+                                        display: inline-block;
+                                    }
+                                    h4{
+                                       text-transform: uppercase;
+                                        margin: 0;
+                                        @include font(#1f2226,14px,600);
+                                    }                           
+                                }
+                            }
+                        }
+                    }
+                
+                }
+             }
+        }
+    }
+    // right
+    .banner-right{
+        width: 15%;
+    }
+ 
+}
+
+
+

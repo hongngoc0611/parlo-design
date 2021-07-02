@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body, button, input, select, optgroup, textarea {
+    color: #404040;  
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+h1,h2,h3,h4,h5,h6{
+    clear: both;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+
+
+*:focus {
+    outline: none;
+}
+
+
+// CONTAINER
+.elementor-container{
+    @include container;
+}
+// ROW
+.elementor-row{
+    width: 100%;
+    display: flex;
+}
+
+// BANNER
+.woolentor-banner-img, .woolentor-content{
+    width: 50%;
+    float: left;
+}
+.woolentor-content-align-right .woolentor-content {
+    order: 2
+}
+.woolentor-content{
+    padding-left: 70px;
+}
+.woolentor-banner {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    .banner_subtitle {
+    margin: 0;
+   
+    }
+    .banner_title{
+        margin: 20px 0;
+       
+    }
+    .banner_button{
+        border-bottom: 1px solid #000;
+        text-transform: uppercase;
+    }
+}
+
+// img
+img{
+    @include intro-img;
+}
+// tag a
+
+a:hover{
+    color: #404040;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.banner_subtitle{
+    @include font(#404040,16px,500);
+   
+}
+.banner_title{
+    @include font(#404040,28px,400);
+}
+.banner_button{
+    @include font(#404040,12px,600);
+    border-color: #404040;
+   
+}
+
+// heading title
+.elementor-widget {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.elementor-widget:not(:last-child){
+    margin-bottom: 20px;
+}
+.elementor-heading-title{
+    padding: 0;
+    margin: 0;
+}
+
+// chung tag elementor-widget
+.elementor-column-wrap{
+    @include column-wrap;
+    .elementor-widget-wrap{
+        @include column-widget;
+    }
+}
+

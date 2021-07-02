@@ -1,0 +1,43 @@
+.lamp-sale{
+    margin-top: 60px;
+    margin-bottom: 90px;
+    .elementor-container{
+       
+        .elementor-row{
+           
+            .lp-column{
+                width: 50%;
+                padding: 0;
+                .lp-populated{
+                   padding: 10px;
+                    .lp-widget-wrap{
+                        @include column-widget;
+                        .lp-widget-left-container{
+                            @include background-image;
+                            
+                            background-color: #fbf8eb;
+                            background-image: url("http://demo.shrimpthemes.com/1/parlo/wp-content/uploads/2019/03/banner_4.png");
+                             .woolentor-content-align-left{
+                                .woolentor-content{
+                                    order: 2;
+                                }
+                                .woolentor-banner-img{
+                                    order: 1;
+                                    padding-left: 50px;
+                                }
+                                }
+                            }
+                        .lp-widget-right-container{
+                            @include background-image;
+                            background-image: url("http://demo.shrimpthemes.com/1/parlo/wp-content/uploads/2019/03/banner_5.png");
+                        }
+
+                       
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+

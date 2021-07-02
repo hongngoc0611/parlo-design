@@ -1,0 +1,56 @@
+.service-element{
+    padding: 30px 0px 90px 0px;
+    .sv-container{
+        @include container;
+        .sv-row{
+            width: 100%;
+            display: flex;
+            .sv-column{
+                min-width: 33.333%;
+                padding: 0;
+            
+            .sv-column-wrap{
+                @include column-wrap;
+                .sv-widget-wrap{
+                    display: flex;
+                    @include column-widget;
+                    .service-icon{
+                        float: left;
+                        width: 70px;
+                        img{
+                            @include intro-img;
+                            margin-top: -30px;
+                        }
+                    }
+                    .service-content{
+                        float: left;
+                        padding-left: 20px;
+                        
+                        h4{
+                            font-family: "Poppins", Sans-serif;
+                            color: #383838;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            margin-bottom: 13px;
+                            text-transform: capitalize;
+                        }
+                        span{
+                            background-color: #383838;
+                            display: block;
+                            height: 3px;
+                            margin-bottom: 13px;
+                            width: 50px;
+                        }
+                        p{
+                            @include card-p(16px,400,#383838,26px);
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+

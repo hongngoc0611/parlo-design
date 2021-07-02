@@ -1,0 +1,16 @@
+.arrow_prev{
+    @include arrow(-100px);
+}
+.arrow_next{
+   @include arrow(650px);
+}
+button{
+    .arrow_prev,.arrow_next{
+        left: auto;
+        right: 20px;
+    }
+    
+    &:focus{
+        outline: none;
+    }
+}

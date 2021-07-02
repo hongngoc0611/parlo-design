@@ -1,0 +1,81 @@
+.products{
+    .elementor-container{
+        .elementor-row{
+            .products-column{
+                width: 100%;
+                .products-populated{
+                        padding: 10px;
+                        .products-widget-wrap{
+                            @include column-widget;
+                            .heading-title{
+                                .elementor-heading-title{
+                                    @include font(#1f2226,30px,500);
+                                }
+                            }
+                            .heading-content{
+                                .elementor-heading-title {
+                                    @include card-p(16px,400,#5a5a5a,24px);
+                                }
+                            }
+                            .intro-product{
+                                width: 100%;
+                                .widget-container{
+                                .product-tab-list{
+                                   text-align: center;
+                                  
+                                .nav-pills{
+                                    
+                                    .nav-item{
+                                        
+                                        .nav-link.active{
+                                            
+                                            background-color: #1f2226 !important;
+                                            border-style: solid;
+                                            border-width: 0px 0px 0px 0px;
+                                        }
+                                    }
+                                }
+                                }
+                            }
+                            }
+                        }
+                }
+            }
+        }
+    }
+
+.nav{
+    margin-bottom: 45px;
+    display: block;
+    
+}
+
+.nav-link{
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1f2226;
+    background-color: #f1f1f1 !important;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    display: block;
+   
+    
+}
+.tab-menu{
+    li{
+        display: inline-block;
+        margin-right: 20px;
+        a{
+            border: 1px solid transparent;
+            padding: 5px 15px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+}
+
+

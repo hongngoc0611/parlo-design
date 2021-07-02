@@ -1,0 +1,123 @@
+@mixin menu {
+    opacity: 0;
+    padding: $pd-2;
+    background-color: $color-white-0;
+    position: absolute;
+    top: 150%;
+    visibility: hidden;
+    width: 200px;
+    z-index: 900;
+    transition:all  0.4s ease 0s;
+    left: 20px;
+    text-align: left;
+    box-shadow: 0 0 3px #ccc;
+    list-style: none;
+
+}
+@mixin card-p($font-size,$font-weight,$color,$line-height) {
+   font-size: $font-size;
+   font-weight: $font-weight;
+   color: $color;
+   line-height: $line-height;
+   font-family: "Poppins", Sans-serif;
+    
+}
+
+@mixin font($color,$font-size,$font-weight) {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: "Poppins", Sans-serif;
+    
+}
+
+@mixin  intro-layout {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+@mixin intro-img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    
+}
+@mixin tag-a ($color,$font-size,$font-weight,$text-decoration){
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-decoration: $text-decoration;
+    font-family: "Poppins", Sans-serif;
+}
+
+@mixin container {
+    max-width: 1220px !important;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;    
+}
+@mixin column-wrap{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+@mixin column-widget {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;  
+}
+@mixin background-image{
+    padding: $pd-6 $pd-00 $pd-6 $pd-00 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+@mixin arrow($left) {
+    background: $color-white-0 none repeat scroll 0 0;
+    border: $border-radius - 1 solid $color-white-1;
+    border-radius: $border-radius1;
+    font-size: $fs-2 + 2;
+    height: $height-width;
+    left: $left;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $height-width;
+    z-index: 99;
+    transition: 0.4s;
+    opacity: 1;
+    margin: 0;
+    color: $color-black;
+}
+
+
+@mixin mediaQuery($breakpoints){
+    @if $breakpoints == 'extra-large'{
+        @media (min-width: 1200px){
+            @content;
+        }
+    }
+    @if $breakpoints == 'large'{
+        @media (min-width: 992px){
+            @content;
+        }
+    }
+    @if $breakpoints == 'medium'{
+        @media (min-width: 768px){
+            @content;
+        }
+    }
+    @if $breakpoints == 'small'{
+        @media (max-width: 767px){
+            @content;
+        }
+    }
+    @else{
+                @warn "`#{$breakpoints}`khong ton tai";
+            }
+}

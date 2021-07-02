@@ -1,0 +1,48 @@
+.intro{
+    padding: 90px 0px 90px 0px;
+    .elementor-container{
+        .elementor-row{
+            #intro-left{
+                width: 59.426%;
+                .intro-populated{
+                    padding: 10px;
+                    
+                }
+            }
+            #intro-right{
+                width: 40.574%;
+                .intro-populated{
+                    padding: 10px;
+                    .intro-widget-wrap{
+                        width: 100%;
+                    .intro-right-widget{
+                        margin-bottom: 20px;
+                    }
+                }
+                }
+            }
+            .intro-right-bottom{
+                .intro-column-widget-container{
+                padding: 26px 0 20px 0;
+                background-color: #effafa;
+                }
+            }
+        }
+    }
+    // CHUNG
+    .intro-column-widget-container{
+        background-color: #fbf8eb;
+        width: 100%;
+    }
+    .woolentor-content-align-right .woolentor-banner-img{
+        padding-left: 50px;
+    }
+    
+ 
+}
+//media
+@media (max-width: 1600px) and (min-width: 1199px){
+    .woolentor-content-align-right .woolentor-content {
+        padding-left: 20px;
+    }
+    }
